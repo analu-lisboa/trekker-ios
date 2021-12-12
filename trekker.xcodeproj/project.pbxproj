@@ -11,6 +11,13 @@
 		21DC9FCD276613F300E38C12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC9FCC276613F300E38C12 /* ContentView.swift */; };
 		21DC9FCF276613FA00E38C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DC9FCE276613FA00E38C12 /* Assets.xcassets */; };
 		21DC9FD2276613FA00E38C12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DC9FD1276613FA00E38C12 /* Preview Assets.xcassets */; };
+		21DC9FDA2766183B00E38C12 /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = 21DC9FD82766183A00E38C12 /* tips.json */; };
+		21DC9FDB2766183B00E38C12 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 21DC9FD92766183B00E38C12 /* locations.json */; };
+		21DC9FDD276633C100E38C12 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC9FDC276633C100E38C12 /* Location.swift */; };
+		21DC9FE02766395700E38C12 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC9FDF2766395700E38C12 /* Locations.swift */; };
+		21DC9FE2276644A100E38C12 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC9FE1276644A100E38C12 /* WorldView.swift */; };
+		21DC9FE427664D8500E38C12 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC9FE327664D8500E38C12 /* Tip.swift */; };
+		21DC9FE627664E8300E38C12 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC9FE527664E8300E38C12 /* TipsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		21DC9FCC276613F300E38C12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21DC9FCE276613FA00E38C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DC9FD1276613FA00E38C12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21DC9FD82766183A00E38C12 /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
+		21DC9FD92766183B00E38C12 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		21DC9FDC276633C100E38C12 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		21DC9FDF2766395700E38C12 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		21DC9FE1276644A100E38C12 /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		21DC9FE327664D8500E38C12 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		21DC9FE527664E8300E38C12 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,16 @@
 		21DC9FC9276613F300E38C12 /* trekker */ = {
 			isa = PBXGroup;
 			children = (
+				21DC9FDE276634B100E38C12 /* domain */,
 				21DC9FCA276613F300E38C12 /* trekkerApp.swift */,
+				21DC9FE1276644A100E38C12 /* WorldView.swift */,
+				21DC9FE327664D8500E38C12 /* Tip.swift */,
+				21DC9FE527664E8300E38C12 /* TipsView.swift */,
 				21DC9FCC276613F300E38C12 /* ContentView.swift */,
+				21DC9FDC276633C100E38C12 /* Location.swift */,
+				21DC9FDF2766395700E38C12 /* Locations.swift */,
+				21DC9FD92766183B00E38C12 /* locations.json */,
+				21DC9FD82766183A00E38C12 /* tips.json */,
 				21DC9FCE276613FA00E38C12 /* Assets.xcassets */,
 				21DC9FD0276613FA00E38C12 /* Preview Content */,
 			);
@@ -65,6 +87,13 @@
 				21DC9FD1276613FA00E38C12 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21DC9FDE276634B100E38C12 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +156,8 @@
 			files = (
 				21DC9FD2276613FA00E38C12 /* Preview Assets.xcassets in Resources */,
 				21DC9FCF276613FA00E38C12 /* Assets.xcassets in Resources */,
+				21DC9FDB2766183B00E38C12 /* locations.json in Resources */,
+				21DC9FDA2766183B00E38C12 /* tips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21DC9FCD276613F300E38C12 /* ContentView.swift in Sources */,
+				21DC9FDD276633C100E38C12 /* Location.swift in Sources */,
+				21DC9FE2276644A100E38C12 /* WorldView.swift in Sources */,
+				21DC9FE427664D8500E38C12 /* Tip.swift in Sources */,
+				21DC9FE627664E8300E38C12 /* TipsView.swift in Sources */,
+				21DC9FE02766395700E38C12 /* Locations.swift in Sources */,
 				21DC9FCB276613F300E38C12 /* trekkerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +322,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -329,7 +365,7 @@
 				21DC9FD4276613FA00E38C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		21DC9FD5276613FA00E38C12 /* Build configuration list for PBXNativeTarget "trekker" */ = {
 			isa = XCConfigurationList;
@@ -338,7 +374,7 @@
 				21DC9FD7276613FA00E38C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
